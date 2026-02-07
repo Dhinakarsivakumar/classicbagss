@@ -1,5 +1,26 @@
 # 🚀 GitHub Pages Hosting Instructions
 
+## ⚠️ IMPORTANT: Read This First!
+
+**Your website files are ready, but they need to be on the `main` branch for GitHub Pages to work.**
+
+Currently, the files are on the `copilot/host-file` branch. You have **two options** to deploy:
+
+### Option A: Merge This Pull Request (Recommended ⭐)
+1. **Merge this PR into `main`** - This is the standard practice
+2. Files will automatically be on the main branch
+3. GitHub Pages will deploy within 2-3 minutes
+4. **See [GITHUB_PAGES_FIX.md](GITHUB_PAGES_FIX.md) for detailed steps**
+
+### Option B: Use GitHub Actions Workflow (Automated 🤖)
+1. This PR now includes a GitHub Actions workflow
+2. It will automatically deploy from ANY branch (including this one)
+3. Go to **Settings** → **Pages**
+4. Change **Source** to "GitHub Actions"
+5. The workflow will deploy automatically
+
+---
+
 ## Your Website is Ready to Go Live!
 
 This Classic Bags website is now properly configured and ready to be hosted on GitHub Pages.
@@ -11,6 +32,7 @@ This Classic Bags website is now properly configured and ready to be hosted on G
 ✅ Relative paths ensure all images and resources load correctly  
 ✅ Responsive design works on all devices  
 ✅ SEO-optimized with proper meta tags  
+✅ GitHub Actions workflow for automated deployment
 
 ### 🌐 Enable GitHub Pages
 
@@ -21,12 +43,20 @@ Follow these simple steps to make your website live:
 2. Click on **Settings** (top right menu)
 
 #### Step 2: Configure GitHub Pages
+
+**If you merged the PR (Option A):**
 1. In the left sidebar, click **Pages**
 2. Under **Build and deployment**:
    - **Source**: Select "Deploy from a branch"
-   - **Branch**: Select `main` (or your default branch)
+   - **Branch**: Select `main`
    - **Folder**: Select `/ (root)`
 3. Click **Save**
+
+**If using GitHub Actions (Option B):**
+1. In the left sidebar, click **Pages**
+2. Under **Build and deployment**:
+   - **Source**: Select "GitHub Actions"
+3. The workflow will automatically deploy
 
 #### Step 3: Wait for Deployment
 - GitHub will automatically build and deploy your site

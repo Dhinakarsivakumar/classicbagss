@@ -2,9 +2,13 @@
 
 A beautiful, responsive website for Classic Bags - showcasing custom handmade bags with eco-friendly materials.
 
+## ⚠️ Deployment Note
+
+**To make this site live:** This PR contains all website files ready for deployment. See [GITHUB_PAGES_FIX.md](GITHUB_PAGES_FIX.md) for instructions on how to deploy to GitHub Pages.
+
 ## 🌐 Live Website
 
-This website is hosted on GitHub Pages and can be accessed at:
+Once deployed, this website will be hosted on GitHub Pages at:
 `https://dhinakarsivakumar.github.io/classicbagss/`
 
 ## ✨ Features
@@ -36,12 +40,17 @@ classicbagss/
 
 ### Deploy to GitHub Pages
 
-This site is already configured for GitHub Pages:
-1. Go to repository Settings
-2. Navigate to Pages section
-3. Select "Deploy from a branch"
-4. Choose `main` branch and `/ (root)` folder
-5. Save and wait 1-2 minutes
+**Option 1: Merge this PR to main (Recommended)**
+- Merge this Pull Request into the `main` branch
+- Then configure GitHub Pages in Settings → Pages
+- Select source: "Deploy from a branch", branch: `main`, folder: `/ (root)`
+
+**Option 2: Use GitHub Actions (Automated)**
+- Go to Settings → Pages
+- Select source: "GitHub Actions"
+- The included workflow will automatically deploy
+
+**Detailed instructions:** See [GITHUB_PAGES_FIX.md](GITHUB_PAGES_FIX.md) and [HOSTING_INSTRUCTIONS.md](HOSTING_INSTRUCTIONS.md)
 
 ## 📞 Contact Information
 
